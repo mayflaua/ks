@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="tables">
+    <h2>Задача 1</h2>
+    <h4>Форма строится динамически по данным из XML</h4>
+    <TaskOne />
+
+    <h2>Задача 2</h2>
+    <h4>Форма привязана к объекту, структура на основе данных из XML</h4>
+    <TaskTwo />
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import TaskOne from '@/components/TaskOne'
+import TaskTwo from '@/components/TaskTwo'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.tables {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 </style>
