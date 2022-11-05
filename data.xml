@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Attr>
+	<Layout firstmargin="16pt">
+		<row type="row">
+			<el label="left" field="1.number" />
+			<el label="left" field="1.date" />
+			<el label="left" field="1.date_exec" movetoright="true"/>
+		</row>
+		<row type="row">
+			<el label="left" field="1.account1" />
+			<el field="1.corr1_n" extendtoright="true" />
+		</row>
+		<row label="left" field="2.corr2_n" extendtoright="true" />
+		<row label="left" field="2.inc_n" extendtoright="true" />
+		<row type="grid" alias="2" extendtobottom="true" />
+	</Layout>
+</Attr>
